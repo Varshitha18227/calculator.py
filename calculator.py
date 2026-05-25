@@ -10,6 +10,7 @@ print("3. Multiplication")
 print("4. Division")
 print("5. Power")
 print("6. Square Root")
+print("7. square")
 
 choice = int(input("\nEnter your choice: "))
 
@@ -61,6 +62,14 @@ elif choice == 6:
     if num1 >= 0:
         result = math.sqrt(num1)
         print("Square Root =", round(result, 2))
+        
+ elif choice==7:
+    num1=float(input("enter a number: "))
+   
+   
+    result=num1**2
+    print("Square =", round(result, 2))
+
     else:
         print("Error! Cannot find square root of negative number.")
 
